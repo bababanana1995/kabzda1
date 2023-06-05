@@ -6,6 +6,7 @@ import {OnOff} from "./components/OnOff/OnOff";
 import {UncontrolledOnOff} from "./components/OnOff/UncontrolledOnOff";
 import {UncontrolledAccordion} from "./components/Accordion/UncontrolledAccordion";
 import {UncontrolledRating} from "./components/Rating/UncontrolledRating";
+import {InputButton} from "./components/InputButton";
 
 function App() {
         const [onOff, setOnOff]=useState(true)
@@ -28,6 +29,8 @@ function App() {
             <OnOff onOff={onOff}
                 isActive={setOnOff}/>
             <UncontrolledOnOff />
+            {/* eslint-disable-next-line react/jsx-no-undef */}
+                <InputButton/>
         </div>
     );
 }
